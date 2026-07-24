@@ -115,8 +115,8 @@
     </tr>
     <tr>
       <td>Device and operational data</td>
-      <td>App version, OS version, device model, access time, request status and error codes</td>
-      <td>Generated automatically. Conversation and translation content is never written to server logs.</td>
+      <td>App version, OS version, device model, access time, request status and error codes, app crash logs and diagnostics</td>
+      <td>Generated automatically. Crash and diagnostic data is used only to find the cause of errors and improve stability. Conversation and translation content is never written to server logs.</td>
     </tr>
   </tbody>
 </table>
@@ -181,7 +181,7 @@
 <table>
   <thead><tr><th>Processor</th><th>Purpose</th></tr></thead>
   <tbody>
-    <tr><td>Google LLC (Firebase, Google Cloud)</td><td>Authentication, database and file storage, push notifications, backend (cloud functions), maps</td></tr>
+    <tr><td>Google LLC (Firebase, Google Cloud)</td><td>Authentication, database and file storage, push notifications, backend (cloud functions), maps, app crash and diagnostics collection (Crashlytics)</td></tr>
     <tr><td>Google LLC (Gemini API)</td><td>AI conversation, speech recognition, speech synthesis, chat translation, live call subtitles and audio</td></tr>
     <tr><td>OpenAI, L.L.C.</td><td>Speech recognition, speech synthesis and text analysis (used optionally, depending on settings)</td></tr>
     <tr><td>ElevenLabs Inc.</td><td>Speech synthesis (used optionally, depending on settings)</td></tr>
