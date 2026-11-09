@@ -12,7 +12,7 @@
 <header class="doc">
   <p class="brand"><a href="index.html">KLOVIN · 클로빈</a></p>
   <h1>Privacy Policy</h1>
-  <p class="meta">Effective date: October 22, 2026 · Last revised: October 22, 2026</p>
+  <p class="meta">Effective date: November 9, 2026 · Last revised: November 9, 2026</p>
 </header>
 <p class="note">This is a translation of the Korean original. If the two differ, the Korean version prevails.</p>
 
@@ -52,7 +52,7 @@
   <li><strong>Friends and the space for two</strong> — friend requests (a short message or a short voice message), friendships, relationship status ("us"), scheduled letters, anniversary cards, decorations and gifts</li>
   <li><strong>Translated chat</strong> — sending text, photos and translated voice messages, automatic translation into the recipient's language, read receipts, and warnings about suspected scam messages</li>
   <li><strong>Voice and video calls with real-time translated captions</strong> — connecting and relaying calls, real-time transcription and translated captions of call audio, and playing translated speech in the voice the user has registered</li>
-  <li><strong>AI friends</strong> — generating chat replies, posts and photos for AI friends (virtual characters) created by the Service</li>
+  <li><strong>AI friends</strong> — generating chat replies, posts and photos for AI friends (virtual characters) created by the Service, and voice calls with AI friends</li>
   <li><strong>Hearts and paid services</strong> — granting, using and managing the expiry of Hearts, ad rewards, invitation benefits, and payments and refunds (where payment features are offered)</li>
   <li><strong>Safety</strong> — handling reports and blocks, screenshot alerts, and usage restrictions</li>
   <li><strong>Sending notifications</strong> — push notifications for messages, calls, friend requests, comments and more</li>
@@ -101,7 +101,7 @@
     <tr><td>Relationships</td><td>Follows and followers, friend requests (short message; for a Super request, the short voice message, its transcription and translation), friendships, scheduled unfriending, relationship status ("us": crush or partner) selections</td></tr>
     <tr><td>Chat</td><td>Messages (text, photos, and for translated voice messages the recording, transcription and translated speech), translations, read times, gifts, anniversary cards and stickers, screenshot alert records, scam-suspicion results</td></tr>
     <tr><td>Space for two</td><td>Scheduled letters (text and photos), purchased decoration items and selected themes and speech bubbles, album themes and card background photos</td></tr>
-    <tr><td>Calls</td><td>Call records (caller and recipient, voice/video, start and end times, call duration). <strong>The content of calls (audio and video) is not recorded.</strong></td></tr>
+    <tr><td>Calls</td><td>Call records (caller and recipient, voice/video, start and end times, call duration). <strong>The content of calls (audio and video) is not recorded.</strong> However, for voice calls with AI friends, a text transcription is stored so the AI friend can remember the conversation.</td></tr>
     <tr><td>My voice (optional)</td><td>A recording (about 18 seconds) used to register the voice for translated speech, and the identifier of the voice model created from it. The recording file itself is not kept on the server</td></tr>
     <tr><td>Hearts</td><td>Heart balance and expiry by batch, history of Hearts received and used (reason and time), ad reward records, invitation records, translated character count statistics</td></tr>
     <tr><td>Safety</td><td>Reports (target and reason), block list</td></tr>
@@ -119,9 +119,10 @@
   <li><strong>Text translation</strong> — Chat messages, post text, comments, bios, friend request messages, letters, and short messages on gifts and cards are translated by Google Gemini into the language of the recipient (or viewer). For chat messages, a few of the immediately preceding messages are also sent as context so the meaning can be translated accurately. Translations are stored on the server so that the same content is not translated again.</li>
   <li><strong>Scam-suspicion warnings</strong> — When a chat message is translated, it is also checked for signs of a possible scam, such as requests for money transfers, attempts to move the conversation to an external messenger, or external links, and a warning is shown only to the recipient.</li>
   <li><strong>Translated voice messages and Super request voice messages</strong> — Recordings are transcribed and translated by Google Gemini, and for translated voice messages Soniox produces speech reading the translation in the voice the sender has registered.</li>
-  <li><strong>Real-time call captions</strong> — If captions are on during a call, the user's call audio is sent to Soniox in real time for transcription and translation. When "Push to talk" is used, speech reading the translation in the voice the user has registered is delivered to the other person. Captions are only displayed on screen and are not stored on the Company's servers.</li>
+  <li><strong>Real-time call captions</strong> — If captions are on during a call, the user's call audio is sent to Soniox in real time for transcription and translation. When "Push to talk" is used, speech reading the translation in the voice the user has registered is delivered to the other person. Captions in calls between people are only displayed on screen and are not stored on the Company's servers.</li>
   <li><strong>Registering my voice</strong> — A voice model is created at Soniox from the voice the user records. It is deleted via [Release] in Settings or by deleting the account. The registered voice is used only for translated speech sent by the user.</li>
   <li><strong>AI friends</strong> — The Service has AI friends (virtual characters marked "AI") created by the Company. Messages and photos sent to an AI friend, transcriptions of voice messages, and recent conversation are sent to Google Gemini to generate replies. For natural conversation, a summary (memory) of the conversation with the AI friend and a closeness score are stored on the server. Photos sent by AI friends are AI-generated images, not real people. AI friends can be hidden in Settings.</li>
+  <li><strong>Voice calls with AI friends</strong> — The user's call audio is sent to Soniox in real time for transcription, and the transcribed text is sent to Google Gemini to generate what the AI friend says. The call audio itself is not stored. So that the AI friend can remember past calls, the Company stores on its servers a text transcription of what was said in the call, embeddings (numbers representing the meaning of the text, used to search it), and a call summary. Transcriptions may contain recognition errors. To investigate errors, call activity logs (including what the AI friend said) are kept for 30 days.</li>
 </ol>
 <p>Information sent to AI providers is processed according to each provider's policies, and the Company does not use it to train the Company's AI models. Translations and AI responses may be inaccurate.</p>
 
@@ -141,9 +142,10 @@
   <tbody>
     <tr><td>Account, profile, profile photos, "people I want to meet" criteria, settings</td><td>Deleted immediately when the account is deleted</td></tr>
     <tr><td>Posts, comments, likes, stories</td><td>Deleted when the user deletes them or deletes the account. Stories are no longer visible after 24 hours</td></tr>
-    <tr><td>Chats (messages, photos, voice) and the space for two</td><td>Even after unfriending, both people can still see past conversations. If either person deletes their account, that chat room and the space for two are deleted</td></tr>
+    <tr><td>Chats (messages, photos, voice) and the space for two</td><td>When a friendship ends, the chat room is closed and neither person can see it; closed chat rooms are kept on the server for 30 days for purposes such as handling reports and are then deleted. If either person deletes their account, that chat room and the space for two are deleted</td></tr>
     <tr><td>My voice (voice model)</td><td>Deleted via [Release] in Settings or when the account is deleted</td></tr>
-    <tr><td>Conversation summary and closeness with AI friends</td><td>Deleted when the account is deleted</td></tr>
+    <tr><td>Chat and call summaries with AI friends, closeness, text transcriptions of what was said in calls and their embeddings</td><td>Deleted when the friendship with that AI friend ends or the account is deleted</td></tr>
+    <tr><td>Call activity logs with AI friends (including what the AI friend said)</td><td>Deleted after 30 days</td></tr>
     <tr><td>Push notification token</td><td>Deleted on logout or when the account is deleted</td></tr>
     <tr><td>Heart history, ad rewards, invitation records</td><td>Deleted when the account is deleted. Paid purchase records are kept for the statutory periods below</td></tr>
     <tr><td>Information sent to providers for translation and AI processing</td><td>Not separately stored on the Company's servers (translations are kept together with the messages above)</td></tr>
@@ -166,13 +168,13 @@
   <thead><tr><th>Contractor</th><th>Outsourced tasks</th></tr></thead>
   <tbody>
     <tr><td>Supabase, Inc.</td><td>Member authentication, database and file storage, operation of server functions (data storage location: Seoul, Republic of Korea)</td></tr>
-    <tr><td>Google LLC (Gemini API)</td><td>Text translation, voice transcription and translation, scam-suspicion detection, generating AI friend replies</td></tr>
+    <tr><td>Google LLC (Gemini API)</td><td>Text translation, voice transcription and translation, scam-suspicion detection, generating AI friend replies and call responses, generating embeddings for AI friend memory search</td></tr>
     <tr><td>Google LLC (Firebase)</td><td>Sending Android push notifications, collecting app error information (Crashlytics)</td></tr>
     <tr><td>Google LLC (AdMob)</td><td>Displaying ads and rewarded ads (Article 9)</td></tr>
     <tr><td>Google LLC · Kakao Corp. (㈜카카오) · Apple Inc.</td><td>Handling login for each account</td></tr>
     <tr><td>Apple Inc.</td><td>Sending iPhone push notifications and incoming call alerts</td></tr>
-    <tr><td>Soniox, Inc.</td><td>Real-time transcription and translated captions for calls, voice registration, translated speech synthesis</td></tr>
-    <tr><td>LiveKit, Inc.</td><td>Connecting voice and video calls and relaying media</td></tr>
+    <tr><td>Soniox, Inc.</td><td>Real-time transcription and translated captions for calls, transcription and speech synthesis for calls with AI friends, voice registration, translated speech synthesis</td></tr>
+    <tr><td>LiveKit, Inc.</td><td>Connecting voice and video calls and relaying media, running calls with AI friends</td></tr>
     <tr><td>Google LLC (Google Play) · Apple Inc. (App Store)</td><td>Processing paid purchases (where payment features are offered)</td></tr>
   </tbody>
 </table>
@@ -267,7 +269,7 @@
 
 <h2 id="a16">Article 16 Changes to This Privacy Policy</h2>
 <p>If anything in this Policy is added, deleted or modified, we will give notice through the app or this page at least 7 days before it takes effect (30 days for changes unfavorable to users).</p>
-<p class="note">Addendum — This Privacy Policy takes effect on October 22, 2026.</p>
+<p class="note">Addendum — This Privacy Policy takes effect on November 9, 2026.</p>
 
 <footer class="doc">
   <a href="index.html">About Klovin</a>
