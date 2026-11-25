@@ -1,0 +1,125 @@
+/* 온기콜(OnghiCall) 약관·방침 공통 스타일 (클로빈 것을 바탕으로 색만 온기콜 청록) */
+:root {
+  color-scheme: light dark;
+  --bg: #ffffff;
+  --fg: #1c1a17;
+  --muted: #6b655d;
+  --line: #e7e2da;
+  --card: #faf8f5;
+  --accent: #0F766E;
+  --fill-bg: #fff3cd;
+  --fill-fg: #7a5b00;
+  --draft-bg: #fde8e8;
+  --draft-fg: #9b1c1c;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #171513;
+    --fg: #ece7e0;
+    --muted: #a49c92;
+    --line: #322e2a;
+    --card: #201d1a;
+    --accent: #2DD4BF;
+    --fill-bg: #4a3a12;
+    --fill-fg: #ffe08a;
+    --draft-bg: #4a1d1d;
+    --draft-fg: #fecaca;
+  }
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard",
+    "Noto Sans KR", "Malgun Gothic", Roboto, sans-serif;
+  line-height: 1.75;
+  font-size: 16px;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+.wrap { max-width: 780px; margin: 0 auto; padding: 32px 20px 96px; }
+
+header.doc { border-bottom: 1px solid var(--line); padding-bottom: 20px; margin-bottom: 28px; }
+.brand { font-size: 13px; letter-spacing: .12em; color: var(--accent); font-weight: 700; margin: 0 0 6px; }
+.brand a { color: inherit; text-decoration: none; }
+h1 { font-size: 26px; line-height: 1.4; margin: 0 0 10px; letter-spacing: -0.01em; }
+.meta { color: var(--muted); font-size: 13px; margin: 0; }
+
+h2 { font-size: 19px; margin: 40px 0 12px; letter-spacing: -0.01em; }
+h3 { font-size: 16px; margin: 24px 0 8px; }
+p, li { font-size: 15px; }
+ul, ol { padding-left: 22px; }
+li { margin: 4px 0; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 40px 0; }
+a { color: var(--accent); }
+
+.lead {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 16px 18px;
+  margin: 0 0 28px;
+}
+.lead p { margin: 6px 0; }
+.lead p:first-child { margin-top: 0; }
+.lead p:last-child { margin-bottom: 0; }
+
+.toc { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 14px 18px; }
+.toc ol { margin: 6px 0 0; }
+.toc li { margin: 2px 0; font-size: 14px; }
+.toc a { text-decoration: none; }
+
+.tablewrap { overflow-x: auto; margin: 14px 0; border: 1px solid var(--line); border-radius: 12px; }
+table { border-collapse: collapse; width: 100%; min-width: 560px; font-size: 14px; }
+th, td { border-bottom: 1px solid var(--line); padding: 10px 12px; text-align: left; vertical-align: top; }
+th { background: var(--card); font-weight: 700; white-space: nowrap; }
+tr:last-child td { border-bottom: 0; }
+
+.fill { background: var(--fill-bg); color: var(--fill-fg); padding: 1px 6px; border-radius: 5px; font-weight: 600; }
+.note { color: var(--muted); font-size: 14px; }
+
+footer.doc { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
+footer.doc a { margin-right: 14px; }
+
+.cards { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-top: 24px; }
+.card {
+  display: block; text-decoration: none; color: inherit;
+  background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 18px 20px;
+}
+.card strong { display: block; font-size: 17px; margin-bottom: 4px; }
+.card span { color: var(--muted); font-size: 14px; }
+
+/* 초안 표시 띠 (확정 후 삭제) */
+.draft {
+  background: var(--draft-bg); color: var(--draft-fg);
+  border: 1px solid currentColor; border-radius: 10px;
+  padding: 10px 14px; margin: 0 0 20px; font-size: 14px; font-weight: 700;
+}
+
+/* 대상자 동의서: 어르신이 읽기 쉽게 큰 글씨 */
+body.consent { font-size: 19px; line-height: 1.8; }
+body.consent .wrap { max-width: 860px; }
+body.consent h1 { font-size: 30px; }
+body.consent h2 { font-size: 23px; margin-top: 36px; }
+body.consent p, body.consent li { font-size: 19px; }
+body.consent table { font-size: 18px; min-width: 0; }
+body.consent th { white-space: normal; width: 26%; }
+.item { border: 2px solid var(--line); border-radius: 14px; padding: 6px 20px 16px; margin: 22px 0; break-inside: avoid; }
+.item h2 { margin-top: 16px; }
+.tag { display: inline-block; font-size: 15px; font-weight: 700; padding: 1px 10px; border-radius: 999px; border: 1px solid var(--accent); color: var(--accent); vertical-align: middle; margin-left: 6px; }
+.choice { font-size: 22px; font-weight: 700; margin: 14px 0 0; display: flex; flex-wrap: wrap; gap: 8px 36px; }
+.sign { width: 100%; border-collapse: collapse; min-width: 0; }
+.sign th, .sign td { border: 1px solid var(--line); padding: 14px 12px; height: 56px; }
+.sign th { width: 24%; }
+.blank { display: inline-block; min-width: 160px; border-bottom: 1px solid var(--fg); }
+
+@media print {
+  :root { color-scheme: light; --bg: #fff; --fg: #000; --muted: #333; --line: #888; --card: #fff; --accent: #000; }
+  .wrap { max-width: none; padding: 0; }
+  .noprint, footer.doc { display: none; }
+  a { color: inherit; text-decoration: none; }
+  .tablewrap { overflow: visible; }
+}
